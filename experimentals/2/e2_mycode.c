@@ -52,8 +52,7 @@ int main()
   {
     /*子进程空间*/
 
-    // ⑹使用memccpy()将src中W之后内容的地址返回到temp;
-    // memchr First!
+    // ⑹使用memchr()将src中第一个W的地址赋给temp;
     char *temp = memchr(src, 'W', page_size);
     if (NULL == temp)
     {
