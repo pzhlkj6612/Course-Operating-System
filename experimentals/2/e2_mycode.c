@@ -87,6 +87,7 @@ int main()
     // ⒀显示经2次修改后的f1的最终内容;
     int n;
     char buf[page_size];
+    // https://stackoverflow.com/questions/14035769/concatenating-strings-in-a-printf-statement
     printf("⒀f1:\n" CYN);
     while ((n = read(fd, buf, page_size)) > 0)
       printf("%s", buf);
